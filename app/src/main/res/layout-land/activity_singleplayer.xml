@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".Singleplayer">
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name" />
+
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ename"
+        android:layout_marginTop="10dp"
+        android:text="Enter number of rounds" />
+
+    <EditText
+        android:id="@+id/eround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/round"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/enter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ename"
+        android:background="@android:color/transparent"
+        android:text="enter" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/round"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/eround"
+        android:background="@android:color/transparent"
+        android:text="play" />
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eround"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="Player"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:text="Nextround" />
+
+    <TextView
+        android:id="@+id/pscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/next"
+        android:layout_marginTop="10dp"
+        android:text="Player score" />
+
+    <TextView
+        android:id="@+id/cscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pscore"
+        android:layout_marginTop="10dp"
+        android:text="Computer score" />
+
+    <Button
+        android:id="@+id/newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cscore"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="newgame" />
+
+    <TextView
+        android:id="@+id/Computerchoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/newgame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Computerchoice:" />
+
+    <ImageButton
+        android:id="@+id/rock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/player"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageButton
+        android:id="@+id/paper"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/rock"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/paper" />
+
+    <ImageButton
+        android:id="@+id/scissor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/paper"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/scissor" />
+
+</RelativeLayout>
